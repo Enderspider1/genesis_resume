@@ -1,0 +1,7 @@
+this is a link to my submissions to a micro game jam. This will allow you to view their score in the game jam as well as demo them if you wish. they were built with the Godot game engine using GDScript. 
+
+geometry teleport:
+https://itch.io/jam/micro-jam-011/rate/2632242
+
+Gone Ice Fishin:
+https://itch.io/jam/micro-jam-012/rate/2661898
