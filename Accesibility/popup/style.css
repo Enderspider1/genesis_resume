@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+
+/*Declaring Variables*/
+:root{
+    --extensionFont: 'Atkinson Hyperlegible', sans-serif;
+    --pageFont: 'Atkinson Hyperlegible', sans-serif;
+    --backgroundColor: rgb(0,0,0);
+    --option1TextColor: rgb(14, 0, 224);
+    --option1InterfaceColor: rgb(255, 246, 0);
+    --option2TextColor: rgb(165,0,0);
+    --option2InterfaceColor: rgb(107, 255, 232);
+    --option2AlternateColor: rgb()
+}
+
+/*the main body of the extension*/
+.bodyClass{
+    max-width: 800px;
+    max-height: 600px;
+    min-width: 400px;
+    background-color: var(--backgroundColor);
+}
+
+/*NOT OPTION SPECIIC*/
+/*all plain text on the extension*/
+.customization-text{
+    font-family: var(--extensionFont);
+    font-size: 40pt;
+    text-align: left;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+/*apply to all SLIDERS*/
+.slideContainer{
+    width: 90%;
+    align-items: left;
+}
+.slider{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    border-radius: 15px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+    outline: solid 5px black;
+}
+
+
+/*apply to all BUTTONS*/
+.buttonContainer{
+    border: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+button{
+    height: 60px;
+    width: 80%;
+    font-size: 30pt;
+    border-radius: 20px;
+    border: 3px solid black;
+    margin: 5px;
+    color: white;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.button:active{
+    border: 3px solid white;
+}
+
+
+/*webkit is for chrome, edge, safari I think*/
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/*moz is for firefox*/
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.option {
+    margin-bottom: 0px;
+}
+
+
+/*FIRST OPTION*/
+.option1 {
+    background-color: var(--option1InterfaceColor);
+}
+
+.option1 h2{
+    color: var(--option1TextColor)
+}
+
+
+.option1 .slider{
+    background: var(--option1TextColor);
+    
+}
+/*webkit is for chrome, edge, safari I think*/
+.option1 .slider::-webkit-slider-thumb {
+    background: white;
+}
+/*moz is for firefox*/
+.option1 .slider::-moz-range-thumb {
+    background: white;
+}
+
+/*SECOND OPTION*/
+.option2 {
+    background-color:var(--option2InterfaceColor) ;
+}
+
+.option2 h2{
+    color: var(--option2TextColor);
+}
+
+.option2 .button{
+    background-color: var(--option2TextColor);
+}
+
+.option .button:hover{
+    background-color: black;
+}
+
